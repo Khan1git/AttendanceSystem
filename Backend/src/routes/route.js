@@ -2,7 +2,7 @@ import express from 'express'
 import { addAccount, auth, countAllstudents, deleteStudent, FindUserById, getAllusers, LoginUser, updateAccount } from '../controllers/AuthController.js'
 import uploads from '../middlewares/uploads.js'
 import authenticateToken from '../middlewares/auth.js'
-import { countAllAttendances, deleteAttendance, getAttendanceByid, markAttendance, showAllAttendance, updateAttendance } from '../controllers/AttendanceController.js'
+import { countAllAttendances, countAttendanceByStatus, deleteAttendance, getAttendanceByid, markAttendance, showAllAttendance, updateAttendance } from '../controllers/AttendanceController.js'
 import { countAllLeaves, deleteLeave, FetchAllLeaves, FetchLeaveById, reqLeave, updateLeaveRequest } from '../controllers/LeaveController.js'
 
 const router = express.Router()
@@ -30,6 +30,7 @@ router.get('/attendance/getbyid/:id', getAttendanceByid)
 router.put('/attendance/updatebyid/:id', updateAttendance)
 
 router.get('/attendance/count', countAllAttendances)
+router.get('/attendance/count-by-status', countAttendanceByStatus)
 
 // ---------------------- LEAVE REQ ------------------
 

@@ -73,3 +73,22 @@ export const countAllAttendances = async (req, res) => {
       res.status(500).json({ error: "An error occurred while counting attendance documents", error: error });
     }
   };
+
+  export const countAttendanceByStatus = async (req, res) => {
+    try {
+        const result = await Attendance.aggregate([
+            { 
+                $group: { 
+                    _id: "$status", 
+                    count: { $sum: 1 } 
+                }
+            }
+        ]);
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({
+            message: "An error occurred while counting attendance by status.",
+            error: error.message
+        });
+    }
+};
