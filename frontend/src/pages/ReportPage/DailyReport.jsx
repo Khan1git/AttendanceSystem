@@ -231,7 +231,7 @@ const DailyReport = () => {
                                     <Text style={styles.tableCellHeader}>Name</Text>
                                     <Text style={styles.tableCellHeader}>Date</Text>
                                     <Text style={styles.tableCellHeader}>Type</Text>
-                                    <Text style={styles.tableCellHeader}>Status</Text>
+                                    {/* <Text style={styles.tableCellHeader}>Status</Text> */}
                                     {/* <Text style={styles.tableCellHeader}>Discount/item</Text> */}
                                     {/* <Text style={styles.tableCellHeader}>Total Leaves</Text> */}
                                 </View>
@@ -241,7 +241,7 @@ const DailyReport = () => {
                                         <Text style={styles.tableCell}>{student.name}</Text>
                                         <Text style={styles.tableCell}>{format(new Date(), 'yyyy-MM-dd')}</Text>
                                         <Text style={styles.tableCell}>{student.attendanceStatus}</Text>
-                                        <Text style={styles.tableCell}>{2}</Text>
+                                        {/* <Text style={styles.tableCell}>{2}</Text> */}
                                         {/* <Text style={styles.tableCell}>{2}</Text> */}
                                         {/* <Text style={styles.tableCell}>{2}</Text> */}
                                     </View>

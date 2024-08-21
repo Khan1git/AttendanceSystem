@@ -25,7 +25,7 @@ const Navbar = () => {
             >
               <span className="logo">Attendance System</span>
             </Link>
-            <input type="search" name="" id="" placeholder='search..' />
+            {/* <input type="search" name="" id="" placeholder='search..' /> */}
           </div>
           <div className="navItems">
             <Link

@@ -135,7 +135,6 @@ const Dashboard = () => {
                 (
                   att.status === 'Rejected' ||
                   att.status === 'Pending' ||
-                  att.status === 'Absent' ||
                   att.status === 'Leave') &&
                 att.date || att.startDate === Date.now()
               ).length}

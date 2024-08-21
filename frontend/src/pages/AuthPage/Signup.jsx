@@ -11,14 +11,15 @@ const Signup = () => {
     const [dob, setDob] = useState('')
     const [hasAdmin, setHasAdmin] = useState(false)
     const [admin, setAdmin] = useState(false)
+    const [loading, setLoading] = useState(false)
     const navigate = useNavigate()
-    console.log(admin)
+    // console.log(admin)
 
 
-    
-  const handleCheckboxChange = (e) => {
-    setAdmin(e.target.checked);
-  };
+
+    const handleCheckboxChange = (e) => {
+        setAdmin(e.target.checked);
+    };
 
 
     useEffect(() => {
@@ -30,6 +31,7 @@ const Signup = () => {
 
     const handleAddStudent = async (e) => {
         e.preventDefault()
+        setLoading(true)
 
         const formData = new FormData()
         formData.append('name', name)
@@ -52,6 +54,11 @@ const Signup = () => {
         } catch (error) {
             console.error("An error has occurred:", error)
         }
+        finally {
+            // Stop loading
+            setLoading(false)
+        }
+
     }
 
     const getAllStudents = async () => {
@@ -112,7 +119,10 @@ const Signup = () => {
                         </div>
                     )}
                     <div className={styles.signup_buttons}>
-                        <button type='submit'>Signup</button>
+                        <button type="submit" disabled={loading}>
+                            {loading ? 'Adding...' : 'Add Student'}
+                        </button>
+
                         <Link to={'/log-in'}>Already have an account?</Link>
                     </div>
                 </form>

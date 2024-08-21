@@ -193,7 +193,6 @@ const EditProfile = () => {
             <Navbar />
             <section className={styles.edit_profile_main_container}>
                 <h1>Student Record</h1>
-
                 <div className={styles.info_part}>
                     {userData && (
                         <div key={userData._id} className={styles.img_part}>
