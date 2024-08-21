@@ -1,0 +1,118 @@
+body {
+    box-sizing: border-box;
+}
+
+.dashboard_main_container {
+    padding: 1rem 0 0 6.25rem;
+    /* border: 1px solid red; */
+    height: 100vh;
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.head button {
+    width: 10vw;
+    overflow: hidden;
+    height: 5vh;
+    /* box-shadow: 0 1px 2px gray;   */
+    /* border: 1px solid gray; */
+    border: none;
+    background-color: white;
+    color: #000;
+    border-radius: 9px;
+    margin: .2rem;
+}
+
+.head button:hover {
+    background-color: rgba(64, 64, 197, 0.137);
+    cursor: pointer;
+}
+
+.Dashboardcards {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 1rem;
+}
+
+.Dashboardcards .card1 {
+    background-color: #845adf;
+    display: flex;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    align-items: start;
+    border-radius: 12px;
+}
+
+.card1 p {
+    margin: 3px 0;
+}
+
+.students_list_section {
+    margin-top: 2rem;
+    padding: 1rem;
+    /* border: 1px solid red; */
+}
+
+.student_table {
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-color: white;
+    /* border-radius: 13px; */
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.student_table::-webkit-scrollbar {
+    display: none;
+}
+
+.student_table table {
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.555);
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.student_table th {
+    text-align: start;
+    border-top: none;
+    /* border-left: 1px solid rgba(128, 128, 128, 0.555); */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+    padding: .5rem;
+}
+
+.student_table td {
+    border-top: none;
+    border-bottom: none;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.555); */
+    /* border-left: 1px solid rgba(128, 128, 128, 0.555); */
+    text-align: start;
+    cursor: pointer;
+    padding: .5rem;
+}
+
+.student_table td  img{
+    height: 4vh;
+    border-radius: 50%;
+    /* width: 30%; */
+}
+
+.student_search{
+    padding: .4rem;
+    outline: none;
+    border: none;
+    margin: .1rem;
+}

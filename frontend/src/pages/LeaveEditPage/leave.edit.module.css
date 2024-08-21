@@ -1,0 +1,58 @@
+.leave_edit_main_container {
+    padding: 1rem 0 0 6.25rem;
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update_leave{
+    width: 80%;
+    /* height: 80%; */
+    border: 1px solid black
+}
+
+
+.leave_Request_body{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    /* height: 100%; */
+}
+
+.leave_dates{
+    gap: .4rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leave_dates input{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    outline: none;
+}
+.leave_reason {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.leave_reason button{
+    width: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.432);
+    cursor: pointer;
+    padding: .3rem;
+}
+
+.leave_reason textarea{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    width: 100%;
+    outline: none;
+}

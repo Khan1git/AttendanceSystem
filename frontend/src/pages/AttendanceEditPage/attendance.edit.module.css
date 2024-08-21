@@ -1,0 +1,42 @@
+.attendance_edit_main_page{
+    padding: 1rem 0 0 6.25rem;
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    height: 60vh;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    width: 50%;
+}
+.edit_part input{
+    width: 50%;
+    outline: none;
+}
+.edit_part select{
+    padding: 1rem;
+    width: 50%;
+    outline: none;
+}
+.edit_part button{
+    padding: 1rem;
+    width: 50%;
+}
+
+.input_part{
+    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid red; */
+    display: flex;
+    width: 100%;
+}

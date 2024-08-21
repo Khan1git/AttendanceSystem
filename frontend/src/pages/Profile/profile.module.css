@@ -1,0 +1,352 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.profile_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f1f7;
+    /* border: 1px solid black; */
+    gap: .3rem;
+    height: 120vh;
+}
+
+.profile_main {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 24px;
+    width: 96%;
+    /* background-color: white; */
+    height: 90%;
+    /* border: 1px solid blue; */
+}
+
+.profile_top {
+    width: 97%;
+    padding: 1rem;
+    height: 20%;
+    background-color: white;
+    border-radius: 9px;
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 1rem;
+    /* border: 1px solid green; */
+}
+
+
+/* .profile_top_img_side {
+   
+    /* width: 20%; */
+/* } */
+
+
+.profile_top_img_side img {
+    /* width: 60%; */
+    /* height: 1vh; */
+    /* border-radius: 50%; */
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile_top_info_side {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+    align-items: start;
+    width: 80%;
+}
+
+.links_part {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.name_part {
+    padding-top: 1rem;
+}
+
+@media (max-width: 740px) {
+
+    .profile_top {
+
+        flex-direction: column;
+        gap: 0;
+        height: 35%;
+    }
+    .profile_top_img_side{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    .profile_top_img_side img {
+        height: 14vh;
+        border-radius: 50%;
+        /* width: 50%; */
+    }
+
+    .links_part {
+        gap: 1rem;
+
+    }
+    .info_left{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 355px) {
+    .profile_top_img_side img {
+        height: 10vh;
+    }
+
+    .links_part {
+        gap: .1rem;
+        font-size: xx-small;
+
+    }
+
+}
+
+
+/* ----------------------------- THE PROFILE BOTTOM SECTIOn */
+
+.profile_bottom {
+    display: flex;
+    /* border: 1px solid red; */
+    background-color: white;
+    width: 100%;
+    /* height: 65%; */
+
+}
+
+.profile_bottom_left {
+    padding: 1rem;
+    /* background-color: #f0f1f7; */
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+}
+
+.profile_bottom_left::-webkit-scrollbar {
+    display: none;
+}
+
+
+.profile_post_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    /* grid-template-columns: 1fr; */
+    grid-gap: .4rem;
+}
+
+.profile_post_grid select,
+input{
+    padding: 1rem;
+    
+}
+
+
+
+.post_buttons button{
+    padding:.1rem;
+    border: none;
+}
+
+
+
+/* ------------------------------ THE ABOUT SECTIO STYLING HERE -------------- */
+
+.profile_about {
+    padding: 2vw 2vw 3vw 4vw;
+    text-align: start;
+    width: 100%;
+    height: 70vh;
+    /* border-bottom: 1px solid red; */
+}
+
+.profile_about h1 {
+    padding: .4rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    width: 100%;
+    /* border-bottom: 1px solid red; */
+}
+
+.profile_main_info {
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.info_left {
+    display: flex;
+    /* justify-content: flex-start;
+    align-items: start; */
+    gap: 1rem;
+    /* border: 1px solid red; */
+    width: 100%;
+    /* border: .1px solid grey; */
+    flex-direction: column;
+
+}
+
+.info_style {
+    /* padding: 1rem; */
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+
+    /* border: 1px solid red; */
+}
+
+.info_style p {
+    text-align: center;
+}
+
+.info_style_btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: .4rem;;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.info_style_btns button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* ---------------------- THE LEAVE REQUEST BODY----------------- */
+
+.leave_main{
+    /* border: 1px solid red; */
+    width: 97%;
+    /* height: 80vh; */
+}
+.leave_main h1{
+    padding-left: 1rem;
+}
+
+.leave_Request_body{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    /* border: 1px solid red; */
+    /* height: 100%; */
+}
+
+.leave_dates{
+    gap: .4rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.leave_dates input{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    outline: none;
+}
+.leave_reason {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.leave_reason button{
+    width: 10%;
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    outline: none;
+    background-color: rgba(0, 132, 255, 0.432);
+    cursor: pointer;
+    padding: .3rem;
+}
+
+.leave_reason textarea{
+    border: 1px solid rgba(128, 128, 128, 0.233);
+    width: 100%;
+    outline: none;
+}
+
+/* ------------------------ ATTANDANCE RECORD TABLE ------------------- */
+
+
+/* ------------- THE FOLLOWING LIST STYEL */
+
+.following_main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 70vh;
+    padding: 1rem;
+   
+}
+
+
+.record_table {
+    width: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+
+}
+
+.record_table::-webkit-scrollbar{
+    display: none;
+}
+ 
+.record_table  table{
+    width: 90%;
+    /* padding: 1rem; */
+    /* border: none; */
+    border: 1px solid rgba(0, 0, 0, 0.185);
+}
+.record_table  table th{
+    padding: .5rem;
+    border: none;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.185);
+    text-align: start;
+
+}
+.record_table  table td{
+    padding: .4rem;
+    border: none;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.185);
+}
+
+
+/* .name_table{
+    width: 40%;
+} */

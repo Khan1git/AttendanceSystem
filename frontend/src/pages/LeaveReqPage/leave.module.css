@@ -1,0 +1,48 @@
+.leave_main_container {
+    padding: 1rem 0 0 6.25rem;
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.no_req{
+    text-align: center;
+}
+
+.leave_req_grid{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    /* grid-template-columns: 1fr; */
+    grid-gap: .4rem;
+}
+.card{
+    background-color: rgba(152, 255, 255, 0.192);
+    border-radius: 12px;
+    padding: 1rem;
+    border: 1px solid grey;
+}
+
+.card button{
+    margin: .2rem;
+    padding: .2rem;
+    border: .1px solid grey;
+}
+
+.card .btn1{
+    background-color: rgba(60, 60, 189, 0.486); 
+}
+.card .btn1:hover{
+    background-color:rgb(39, 233, 39);
+    color: white;
+    cursor: pointer;
+}
+
+.card .btn2{
+    background-color: rgba(60, 60, 189, 0.486); 
+}
+
+.card .btn2:hover{
+    background-color:rgb(233, 62, 39);
+    color: white;
+    cursor: pointer;
+}

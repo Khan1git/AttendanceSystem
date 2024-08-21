@@ -1,0 +1,106 @@
+.edit_profile_main_container {
+    padding: 1rem 0 0 6.25rem;
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_part {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    /* border: 1px solid red;/ */
+    width: 90%;
+    height: 20vh;
+}
+
+.img_part {
+    padding: 1rem;
+    /* border: 1px solid red; */
+    display: flex;
+    /* width: 40%; */
+    gap: 1rem;
+    align-items: end;
+    height: 100%;
+}
+
+.img_part img {
+    height: 10vh;
+}
+
+.profile_attendance_Part{
+    padding: 1rem;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+    align-items: end;
+    /* border: 1px solid red; */
+    /* width: 10%; */
+    gap: .4rem;
+}
+
+.profile_attendance_Part select{
+    padding: 1rem;
+}
+.profile_attendance_Part button{
+    padding: 1rem;
+}
+.alert{
+    text-align: center;
+    width: 50%
+    /* border: 1px solid red; */
+}
+
+
+.search_students{
+    border: none;
+}
+
+/* --------- THE ROCRDS ATBALE */
+
+.records_part{
+    width: 90%;
+    /* border: 1px solid red; */
+    height: 50vh;
+}
+
+
+.record_table {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* border: 1px solid red; */
+
+}
+
+.record_table::-webkit-scrollbar{
+    display: none;
+}
+ 
+.record_table  table{
+    width: 90%;
+    /* padding: 1rem; */
+    /* border: none; */
+    border: 1px solid rgba(0, 0, 0, 0.185);
+}
+.record_table  table th{
+    padding: .5rem;
+    border: none;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.185);
+    text-align: start;
+
+}
+.record_table  table td{
+    padding: .4rem;
+    border: none;
+    border-bottom:  1px solid rgba(0, 0, 0, 0.185);
+}
+
+
+.profile_post_grid{
+    width: 80%;
+    border: 1px solid red;
+}
